@@ -96,7 +96,7 @@ class MapsObjectUpdates<T extends MapsObject> {
     addIfNonNull(
         '${objectName}IdsToRemove',
         _objectIdsToRemove
-            .map<String>((MapsObjectId<T> m) => m.value)
+            .map<String?>((MapsObjectId<T> m) => m.value)
             .toList());
 
     return updateMap;

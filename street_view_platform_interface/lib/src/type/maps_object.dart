@@ -17,7 +17,7 @@ class MapsObjectId<T> {
   const MapsObjectId(this.value) : assert(value != null);
 
   /// The value of the id.
-  final String value;
+  final String? value;
 
   @override
   bool operator ==(Object other) {
