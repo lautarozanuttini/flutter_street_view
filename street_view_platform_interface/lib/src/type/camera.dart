@@ -1,8 +1,4 @@
-import 'package:street_view_platform_interface/src/type/street_view_panorama_link.dart';
-import 'package:street_view_platform_interface/src/type/util/misc.dart';
 import 'package:street_view_platform_interface/street_view_platform_interface.dart';
-
-import 'latLng.dart';
 
 class StreetViewCameraPosition {
   StreetViewCameraPosition(
@@ -26,7 +22,7 @@ class StreetViewCameraPosition {
 
   /// Put all param to a map
   dynamic toMap() {
-    Map<String, dynamic> param = Map();
+    Map<String, dynamic> param = {};
     putToMapIfNonNull(param, "position", position?.toJson());
     putToMapIfNonNull(param, "panoId", panoId);
     putToMapIfNonNull(param, "radius", radius);
@@ -56,7 +52,7 @@ class StreetViewPanoramaCamera {
   final double? fov;
 
   factory StreetViewPanoramaCamera.fromMap(dynamic map) {
-    return new StreetViewPanoramaCamera(
+    return StreetViewPanoramaCamera(
       bearing: map['bearing'] as double?,
       tilt: map['tilt'] as double?,
       zoom: map['zoom'] as double?,

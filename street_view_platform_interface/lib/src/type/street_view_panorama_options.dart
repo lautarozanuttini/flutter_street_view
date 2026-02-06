@@ -1,8 +1,4 @@
-import 'package:street_view_platform_interface/src/type/camera.dart';
-import 'package:street_view_platform_interface/src/type/street_view_source.dart';
-
 import '../../street_view_platform_interface.dart';
-import 'latLng.dart';
 
 class StreetViewPanoramaOptions {
   /// Set initialization location by panorama ID.
@@ -130,7 +126,7 @@ class StreetViewPanoramaOptions {
 
   /// Create [StreetViewPanoramaOptions] and put data by [map].
   factory StreetViewPanoramaOptions.fromMap(Map<String, dynamic> map) {
-    return new StreetViewPanoramaOptions(
+    return StreetViewPanoramaOptions(
       panoId: map['panoId'] as String?,
       position: map['position'] as LatLng?,
       radius: map['radius'] as double?,

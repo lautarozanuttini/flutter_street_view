@@ -2,7 +2,6 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart' show objectRuntimeType;
 import 'package:meta/meta.dart' show immutable;
 
 /// Uniquely identifies object an among [StreetView] collections of a specific
@@ -32,7 +31,7 @@ class MapsObjectId<T> {
 
   @override
   String toString() {
-    return '${objectRuntimeType(this, 'MapsObjectId')}($value)';
+    return '$runtimeType($value)';
   }
 }
 
