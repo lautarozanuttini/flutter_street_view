@@ -2,7 +2,7 @@ export 'bitmap.dart';
 export 'callback.dart';
 export 'camera.dart';
 export 'control_position.dart';
-//export 'latLng.dart';
+export 'latLng.dart';
 export 'maps_object_updates.dart';
 export 'maps_object.dart';
 export 'marker.dart';
