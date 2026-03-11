@@ -513,6 +513,7 @@ extension FlutterGoogleStreetViewPluginExtension
     bool enable = (arg is Map ? arg['userNavigationEnabled'] : arg) as bool? ??
         _isUserNavigationEnabled;
     _options.clickToGo = enable;
+    _options.linksControl = enable;
     if (toApply) {
       _apply(_options);
     }
