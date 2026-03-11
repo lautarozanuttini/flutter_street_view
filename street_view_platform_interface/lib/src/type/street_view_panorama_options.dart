@@ -1,3 +1,4 @@
+import 'package:street_view_platform_interface/src/type/latLng.dart';
 import '../../street_view_platform_interface.dart';
 
 class StreetViewPanoramaOptions {

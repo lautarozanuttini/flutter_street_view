@@ -4,6 +4,7 @@
 
 import 'package:flutter/foundation.dart' show VoidCallback;
 import 'package:meta/meta.dart' show immutable;
+import 'package:street_view_platform_interface/src/type/latLng.dart';
 import 'types.dart';
 
 /// Uniquely identifies a [Marker] among [StreetView] markers.

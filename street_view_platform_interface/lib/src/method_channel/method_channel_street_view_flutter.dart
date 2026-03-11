@@ -7,6 +7,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:stream_transform/stream_transform.dart';
+import 'package:street_view_platform_interface/src/type/latLng.dart';
 import 'package:street_view_platform_interface/street_view_platform_interface.dart';
 
 class MethodChannelStreetViewFlutter extends StreetViewFlutterPlatform {

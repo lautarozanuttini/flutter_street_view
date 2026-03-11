@@ -1,3 +1,4 @@
+import 'package:street_view_platform_interface/src/type/latLng.dart';
 import 'package:street_view_platform_interface/street_view_platform_interface.dart';
 
 class StreetViewCameraPosition {
